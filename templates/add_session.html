@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}SLRF Registration{% endblock %}
+{% block content %} 
+<div class="span-16" id="intro"> 
+  
+  <div id="session_addition_form">
+    <form method="post" action="." class="session_addition">
+      <fieldset>
+        <legend>Add a session</legend>
+        
+        {{ form.as_p }}
+        
+      </fieldset>
+      <p><input type="submit" value="Register" /></p>
+    </form>
+  </div>
+  
+  
+</div>
+<hr>
+{% endblock %}
+

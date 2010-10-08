@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en-us">
+  {% include "head.html" %}
+   
+  <body>
+    <div class="container">
+      <div class="span-20 last">
+        
+        {% include "header.html" %}
+        {% include "navmenu.html" %}
+        
+        <div class="span-16 prepend-4 last">
+        {% block content %}{% endblock %}
+        </div>
+        
+      </div>
+      {% block sidebar%}{% endblock %}
+      {% include "footer.html" %}
+    </div>
+  </body>
+</html>
